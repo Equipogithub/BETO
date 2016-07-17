@@ -1,0 +1,274 @@
+/*software para maquetar*/
+/*descargar JQuery*/
+<!--HTML5-frame-->
+@charset "utf-8";
+
+.caja .menu{
+    width: 50%;
+    background-color:rgba(0,0,0,.8);
+    padding: 10px;
+    margin-bottom: 4px
+}
+.tabla{
+    position: absolute;
+    left: 60px;
+    top:450px;
+    background-color:darkblue;
+   
+}
+.beto{
+    align-content:center;
+}
+.caja .banner{
+    
+    width: 50%;
+    
+    border: 1.5px solid;
+    border-color: black;
+    margin: auto;
+    background-size: 100% 100%;
+    margin-bottom: 8px;
+    text-align: center;
+    padding: 150px;
+    animation: banner 10s infinite;
+    animation-direction:alternate;
+    margin-top: 2%;
+    
+}
+
+@keyframes banner{
+    0%, 30%{
+        background-image: url(img/naruto.jpg);
+        opacity: 1;
+    }
+    35%, 65%{
+        background-image: url(img/SAO.jpg);
+        opacity: 1;
+    }
+    66%, 69%{
+        
+    }
+    70%, 100%{
+    
+        background-image: url(img/GATE.png);
+    }
+}
+.caja .botones{
+    color: white;
+    float: right;
+    margin-top: 5%;
+    
+}
+.caja .menu{
+    
+    float: right;
+    padding: 3px;
+    margin-bottom: 5px;
+    background-color: darkred;
+}
+
+.caja .contenido{
+ 
+    
+    color: white;
+    width: 48%;
+    background-color:rgba(0,0,0,.8);
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 46px;
+    height: 27em;
+    float: left;
+    text-align: center;
+}
+
+
+/*--------------------------galeria--------------------------*/
+
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+/*Estilos de la galeria, posicion*/
+
+.galeria {
+    width: 80%;
+    margin: auto;
+    list-style: none;
+    
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.galeria li {
+    margin: 5px;
+
+}
+
+.galeria img {
+    width: 150px;
+    height: 100px;
+}
+
+/*Estilos del modal*/
+
+.modal {
+    display: none;
+}
+
+.modal:target {
+    
+    display: block;
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*-------------------------- encabezado de la galeria ----*/
+.modal h3 {
+    color: red;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.imagen {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*-------------------------- fechas de cambio ---------*/
+.imagen a {
+    background: black;
+    color: red;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.imagen a:nth-child(2) {
+    margin: 0;
+    height: 100%;
+    flex-shrink: 2;
+}
+
+/*----------------------------imagen en grande----------*/
+.imagen img {
+    width: 500px;
+    height: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/*-------------------------------BOTON "X"----------------*/
+.cerrar {
+    float: inherit;
+    display: block;
+    background: black;
+    width: 25px;
+    height: 25px;
+    margin: 15px auto;
+    text-align: center;
+    text-decoration: inherit;
+    font-size: 25px;
+    color: red;
+    padding: 5px;
+    border-radius: 50%;
+    line-height: 25px;
+}
+
+/*-----------------------------------------------------*/
+
+
+
+
+.caja .destacados{
+    color: white;
+    float: right;
+    background-color:rgba(0,0,0,.8);
+    float: right;
+    width: 48%;
+    padding: 5px;
+    margin-bottom: 10px;
+    height: 27em;
+    text-align: center;
+}
+
+.caja .formulario{
+    width: 50%;
+    height: 90%;
+    border: 1px solid;
+    font-size: 20px;
+    overflow: auto;
+}
+.caja .gl{
+    color: white;
+    float: center;
+    clear: both;
+    background-color: rgba(0,0,0,.8);
+    padding: 12px;
+    text-align: center;
+}
+.caja .pie{
+    color: white;
+    clear: both;
+    background-color:rgba(0, 0, 10, 0.44);
+    padding: 5px;
+    margin-bottom: 10px;
+    height: 34em;
+    text-align: left;
+}
+.x{
+    color: white;
+    clear: both;
+    
+    background-color:rgba(0, 0, 10, 0.44);
+    padding: 5px;
+    height: 2em;
+    text-align: left; 
+}
+
+a{
+    color: white;
+    float: center;
+}
+ul{
+		list-style-type:none;
+		margin:2px;
+		padding: 0px;
+		border-left-width: 1px;
+		border-left-style: solid;
+		border-left-color: #ccc; 
+		overflow:hidden;
+	}
+	li{
+		display: inline;
+	}
+	a{
+		font-family: arial,Helvetica,Sans-serif;
+		color: #000;
+		text-decoration: none;
+		font-size: .99em;
+		display: block;
+		float: left;
+		padding: 6px;
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-color: #ccc;
+		background-color: #eaeaea;
+		border-top-width: 1px;
+		border-top-style: solid;
+		border-top-color: #ccc;
+		border-right-width: 2px;
+		border-right-style: solid;
+		border-right-color: #ccc;
+	}
+
+</head>
